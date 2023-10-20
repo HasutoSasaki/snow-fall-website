@@ -10,6 +10,7 @@
     height: 100vh;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .snow-container__title {
@@ -18,4 +19,31 @@
     font-size: x-large;
     text-shadow: 5px 5px 5px black;
 
+}
+
+.snow {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: snowFall 10s linear;
+}
+
+@keyframes snowFall {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 100vh;
+    }
 }
